@@ -9,7 +9,10 @@ variable "ec2_tags" {
 }
 
 variable "sg_tags" {
-
-    default = "docker-practice"  
-    type = string
+  type = map(string)
+  default = {
+    Name        = "docker-practice"
+    Environment = "dev"
+  }
 }
+
