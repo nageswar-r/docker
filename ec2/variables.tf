@@ -1,7 +1,7 @@
 variable "ec2_tags" {
     type = map
     default = {
-        Name = "variables-demo"
+        Name = "docker-practice"
         Project = "roboshop"
         Terraform = "true"
         Environment = "dev"
