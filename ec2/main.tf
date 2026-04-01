@@ -9,7 +9,9 @@ resource "aws_instance" "test" {
     volume_size = 50
     volume_type = "gp3"
     # EBS volume tags
-    tags = "docker-practice"
+    tags = {
+        Name = "docker-practice"
+    }
     }
 }
 

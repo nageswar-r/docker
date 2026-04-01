@@ -16,3 +16,10 @@ variable "sg_tags" {
   }
 }
 
+variable "disk_tags" {
+  type = map(string)
+  default = {
+    Name        = "docker-practice"
+    Environment = "dev"
+  }
+}
